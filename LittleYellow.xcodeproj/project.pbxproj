@@ -39,6 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17180492257FAFA600A7C594 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				17525BF9257F9EDF006CEC68 /* Main.storyboard */,
+				17525BFF257F9EE1006CEC68 /* Assets.xcassets */,
+				17525C01257F9EE1006CEC68 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		17180493257FAFAE00A7C594 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		17180494257FAFB800A7C594 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				17525BF3257F9EDF006CEC68 /* AppDelegate.swift */,
+				17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */,
+				17525BF7257F9EDF006CEC68 /* ViewController.swift */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
 		17525BE7257F9EDF006CEC68 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +85,9 @@
 		17525BF2257F9EDF006CEC68 /* LittleYellow */ = {
 			isa = PBXGroup;
 			children = (
-				17525BF3257F9EDF006CEC68 /* AppDelegate.swift */,
-				17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */,
-				17525BF7257F9EDF006CEC68 /* ViewController.swift */,
-				17525BF9257F9EDF006CEC68 /* Main.storyboard */,
-				17525BFF257F9EE1006CEC68 /* Assets.xcassets */,
-				17525C01257F9EE1006CEC68 /* LaunchScreen.storyboard */,
+				17180493257FAFAE00A7C594 /* model */,
+				17180494257FAFB800A7C594 /* control */,
+				17180492257FAFA600A7C594 /* view */,
 				17525C04257F9EE1006CEC68 /* Info.plist */,
 				17525BFC257F9EDF006CEC68 /* LittleYellow.xcdatamodeld */,
 			);
