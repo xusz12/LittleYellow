@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		17525BF4257F9EDF006CEC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17525BF3257F9EDF006CEC68 /* AppDelegate.swift */; };
 		17525BF6257F9EDF006CEC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */; };
-		17525BF8257F9EDF006CEC68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17525BF7257F9EDF006CEC68 /* ViewController.swift */; };
 		17525BFB257F9EDF006CEC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17525BF9257F9EDF006CEC68 /* Main.storyboard */; };
 		17525BFE257F9EDF006CEC68 /* LittleYellow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17525BFC257F9EDF006CEC68 /* LittleYellow.xcdatamodeld */; };
 		17525C00257F9EE1006CEC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17525BFF257F9EE1006CEC68 /* Assets.xcassets */; };
 		17525C03257F9EE1006CEC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17525C01257F9EE1006CEC68 /* LaunchScreen.storyboard */; };
+		17B25A4B2580F0E80029BEA8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A4A2580F0E80029BEA8 /* HomeVC.swift */; };
+		17B25A4E2580F3060029BEA8 /* FolloewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A4D2580F3060029BEA8 /* FolloewVC.swift */; };
+		17B25A512580F3180029BEA8 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A502580F3180029BEA8 /* NearbyVC.swift */; };
+		17B25A542580F32E0029BEA8 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A532580F32E0029BEA8 /* DiscoveryVC.swift */; };
+		17B25A592580F4C10029BEA8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A582580F4C10029BEA8 /* Constant.swift */; };
 		2B0DF7962587928CFEAF8E8C /* Pods_LittleYellow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A223CB9F93B3BF54D348A60 /* Pods_LittleYellow.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +25,16 @@
 		17525BF0257F9EDF006CEC68 /* LittleYellow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleYellow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17525BF3257F9EDF006CEC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17525BF7257F9EDF006CEC68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17525BFA257F9EDF006CEC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17525BFD257F9EDF006CEC68 /* LittleYellow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittleYellow.xcdatamodel; sourceTree = "<group>"; };
 		17525BFF257F9EE1006CEC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17525C02257F9EE1006CEC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17525C04257F9EE1006CEC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B25A4A2580F0E80029BEA8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		17B25A4D2580F3060029BEA8 /* FolloewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolloewVC.swift; sourceTree = "<group>"; };
+		17B25A502580F3180029BEA8 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
+		17B25A532580F32E0029BEA8 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		17B25A582580F4C10029BEA8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4A223CB9F93B3BF54D348A60 /* Pods_LittleYellow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleYellow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A048F0E9F26A57DFDF09F6D /* Pods-LittleYellow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleYellow.release.xcconfig"; path = "Target Support Files/Pods-LittleYellow/Pods-LittleYellow.release.xcconfig"; sourceTree = "<group>"; };
 		E7220E993DC04DFF5BD40663 /* Pods-LittleYellow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleYellow.debug.xcconfig"; path = "Target Support Files/Pods-LittleYellow/Pods-LittleYellow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 		17180493257FAFAE00A7C594 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				17B25A582580F4C10029BEA8 /* Constant.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -66,7 +75,7 @@
 			children = (
 				17525BF3257F9EDF006CEC68 /* AppDelegate.swift */,
 				17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */,
-				17525BF7257F9EDF006CEC68 /* ViewController.swift */,
+				17B25A562580F3420029BEA8 /* home */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -101,6 +110,17 @@
 			path = LittleYellow;
 			sourceTree = "<group>";
 		};
+		17B25A562580F3420029BEA8 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				17B25A4A2580F0E80029BEA8 /* HomeVC.swift */,
+				17B25A4D2580F3060029BEA8 /* FolloewVC.swift */,
+				17B25A502580F3180029BEA8 /* NearbyVC.swift */,
+				17B25A532580F32E0029BEA8 /* DiscoveryVC.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 		81E6A1F2C15D56A8AE6ADD53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +135,6 @@
 				E7220E993DC04DFF5BD40663 /* Pods-LittleYellow.debug.xcconfig */,
 				6A048F0E9F26A57DFDF09F6D /* Pods-LittleYellow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -233,10 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17525BF8257F9EDF006CEC68 /* ViewController.swift in Sources */,
 				17525BF4257F9EDF006CEC68 /* AppDelegate.swift in Sources */,
+				17B25A4B2580F0E80029BEA8 /* HomeVC.swift in Sources */,
 				17525BF6257F9EDF006CEC68 /* SceneDelegate.swift in Sources */,
+				17B25A592580F4C10029BEA8 /* Constant.swift in Sources */,
 				17525BFE257F9EDF006CEC68 /* LittleYellow.xcdatamodeld in Sources */,
+				17B25A542580F32E0029BEA8 /* DiscoveryVC.swift in Sources */,
+				17B25A4E2580F3060029BEA8 /* FolloewVC.swift in Sources */,
+				17B25A512580F3180029BEA8 /* NearbyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
