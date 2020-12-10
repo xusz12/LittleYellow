@@ -16,6 +16,11 @@ class HomeVC: ButtonBarPagerTabStripViewController{
         settings.style.buttonBarItemBackgroundColor = .clear
         settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 15)
         settings.style.buttonBarItemLeftRightMargin = 0
+
+        super.viewDidLoad()
+        //取消下方containerView(scrollView)最左最右回弹效果
+        containerView.bounces = false
+        
         //复制包的example代码,改变了被选中title的颜色(选中的深色,为选中浅色)
         changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
@@ -32,10 +37,7 @@ class HomeVC: ButtonBarPagerTabStripViewController{
                 oldCell?.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
         }
-        
-        super.viewDidLoad()
 
-        
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let followVC = self.storyboard!.instantiateViewController(identifier: kFollowVCID)
