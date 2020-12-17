@@ -37,7 +37,10 @@ class HomeVC: ButtonBarPagerTabStripViewController{
                 oldCell?.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
         }
-
+        //直接显示第二个页面(需要在主线程中实现dispatchqueue.main.asynv(code))
+        DispatchQueue.main.async {
+            self.moveToViewController(at: 1,animated: false)
+        }
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let followVC = self.storyboard!.instantiateViewController(identifier: kFollowVCID)

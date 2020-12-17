@@ -7,11 +7,14 @@
 
 import UIKit
 import XLPagerTabStrip
-class DiscoveryVC: UIViewController ,IndicatorInfoProvider{
+class DiscoveryVC: ButtonBarPagerTabStripViewController ,IndicatorInfoProvider{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        []
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
