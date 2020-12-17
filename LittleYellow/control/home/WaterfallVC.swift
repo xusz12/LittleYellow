@@ -19,7 +19,7 @@ class WaterfallVC: UICollectionViewController{
         layout.columnCount = 2
         layout.minimumColumnSpacing = kSpaceNum
         layout.minimumInteritemSpacing = kSpaceNum
-        layout.sectionInset = UIEdgeInsets(top: kSpaceNum, left: kSpaceNum, bottom: kSpaceNum, right: kSpaceNum)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: kSpaceNum, bottom: kSpaceNum, right: kSpaceNum)
         layout.itemRenderDirection = .shortestFirst
     }
 
@@ -48,8 +48,12 @@ class WaterfallVC: UICollectionViewController{
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell
-        cell.imageView.image = UIImage(named: "\(indexPath.item + 1)")
-    
+        switch tagName {
+        case "私房":
+            cell.imageView.image = UIImage(named: "\(indexPath.item + 1)")
+        default:
+            cell.imageView.image = UIImage(named: "1")
+        }
         return cell
     }
 
@@ -88,7 +92,11 @@ class WaterfallVC: UICollectionViewController{
 // MARK: - CHTCollectionViewDelegateWaterfallLayout
 extension WaterfallVC : CHTCollectionViewDelegateWaterfallLayout,IndicatorInfoProvider{
     func collectionView(_ collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAt indexPath: IndexPath!) -> CGSize {
-        return UIImage(named: "\(indexPath.item+1)")!.size
+        if tagName == "私房"{
+            return UIImage(named: "\(indexPath.item+1)")!.size
+        }else{
+            return UIImage(named: "1")!.size
+        }
     }
 
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
