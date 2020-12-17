@@ -127,29 +127,38 @@
             </objects>
             <point key="canvasLocation" x="-1907.2463768115942" y="-1250.2232142857142"/>
         </scene>
-        <!--WaterfallVC Collection View Controller-->
+        <!--WaterfallVC-->
         <scene sceneID="BfR-yz-8Zq">
             <objects>
-                <collectionViewController id="ek0-eD-1d0" customClass="WaterfallVCCollectionViewController" customModule="LittleYellow" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="WaterfallVCID" id="ek0-eD-1d0" customClass="WaterfallVC" customModule="LittleYellow" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XiC-TN-Xaq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FQz-CV-E5R">
-                            <size key="itemSize" width="340" height="354"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
+                        <collectionViewLayout key="collectionViewLayout" id="TUD-1M-S49" customClass="CHTCollectionViewWaterfallLayout"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="waterfallCellID" id="WeV-Qs-zKB">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="waterfallCellID" id="WeV-Qs-zKB" customClass="WaterfallCell" customModule="LittleYellow" customModuleProvider="target">
                                 <rect key="frame" x="37" y="0.0" width="340" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QH3-Ki-7si">
                                     <rect key="frame" x="0.0" y="0.0" width="340" height="354"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lsr-Xi-0TH">
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="354"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Lsr-Xi-0TH" secondAttribute="bottom" id="2cD-6V-dbn"/>
+                                        <constraint firstItem="Lsr-Xi-0TH" firstAttribute="leading" secondItem="QH3-Ki-7si" secondAttribute="leading" id="KSx-Jg-aOO"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lsr-Xi-0TH" secondAttribute="trailing" id="Mbq-UK-eFB"/>
+                                        <constraint firstItem="Lsr-Xi-0TH" firstAttribute="top" secondItem="QH3-Ki-7si" secondAttribute="top" id="h31-QA-ESi"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="340" height="354"/>
+                                <connections>
+                                    <outlet property="imageView" destination="Lsr-Xi-0TH" id="nfb-fn-WGi"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -160,7 +169,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLL-w1-E6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1213.0434782608697" y="-1250.2232142857142"/>
+            <point key="canvasLocation" x="-949" y="-1250"/>
         </scene>
         <!--NearbyVC-->
         <scene sceneID="9k0-9q-vZK">

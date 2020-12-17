@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import CHTCollectionViewWaterfallLayout
+import XLPagerTabStrip
 
-private let reuseIdentifier = "Cell"
+class WaterfallVC: UICollectionViewController{
 
-class WaterfallVCCollectionViewController: UICollectionViewController {
-
+    var tagName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
+        layout.columnCount = 2
+        layout.minimumColumnSpacing = kSpaceNum
+        layout.minimumInteritemSpacing = kSpaceNum
+        layout.sectionInset = UIEdgeInsets(top: kSpaceNum, left: kSpaceNum, bottom: kSpaceNum, right: kSpaceNum)
+        layout.itemRenderDirection = .shortestFirst
     }
 
     /*
@@ -30,18 +37,18 @@ class WaterfallVCCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 11
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath)
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell
+        cell.imageView.image = UIImage(named: "\(indexPath.item + 1)")
     
         return cell
     }
@@ -77,4 +84,14 @@ class WaterfallVCCollectionViewController: UICollectionViewController {
     }
     */
 
+}
+// MARK: - CHTCollectionViewDelegateWaterfallLayout
+extension WaterfallVC : CHTCollectionViewDelegateWaterfallLayout,IndicatorInfoProvider{
+    func collectionView(_ collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAt indexPath: IndexPath!) -> CGSize {
+        return UIImage(named: "\(indexPath.item+1)")!.size
+    }
+
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: tagName)
+    }
 }

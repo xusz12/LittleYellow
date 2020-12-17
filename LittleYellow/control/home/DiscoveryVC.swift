@@ -14,7 +14,13 @@ class DiscoveryVC: ButtonBarPagerTabStripViewController ,IndicatorInfoProvider{
 
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        []
+        var vcs : [UIViewController] = []
+        for tag in kTags{
+            let vc = self.storyboard!.instantiateViewController(identifier: kWaterfallVCID) as! WaterfallVC
+            vc.tagName = tag
+            vcs.append(vc)
+        }
+        return vcs
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {

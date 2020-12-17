@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1734039B258B59A40030C1FC /* WaterfallVCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734039A258B59A40030C1FC /* WaterfallVCCollectionViewController.swift */; };
+		1734039B258B59A40030C1FC /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734039A258B59A40030C1FC /* WaterfallVC.swift */; };
+		173C1023258B6CEB009411FF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C1022258B6CEB009411FF /* WaterfallCell.swift */; };
 		17525BF4257F9EDF006CEC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17525BF3257F9EDF006CEC68 /* AppDelegate.swift */; };
 		17525BF6257F9EDF006CEC68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */; };
 		17525BFB257F9EDF006CEC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17525BF9257F9EDF006CEC68 /* Main.storyboard */; };
@@ -23,7 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1734039A258B59A40030C1FC /* WaterfallVCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVCCollectionViewController.swift; sourceTree = "<group>"; };
+		1734039A258B59A40030C1FC /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		173C1022258B6CEB009411FF /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
 		17525BF0257F9EDF006CEC68 /* LittleYellow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleYellow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17525BF3257F9EDF006CEC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,7 +121,8 @@
 				17B25A4D2580F3060029BEA8 /* FolloewVC.swift */,
 				17B25A502580F3180029BEA8 /* NearbyVC.swift */,
 				17B25A532580F32E0029BEA8 /* DiscoveryVC.swift */,
-				1734039A258B59A40030C1FC /* WaterfallVCCollectionViewController.swift */,
+				1734039A258B59A40030C1FC /* WaterfallVC.swift */,
+				173C1022258B6CEB009411FF /* WaterfallCell.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -257,12 +260,13 @@
 			files = (
 				17525BF4257F9EDF006CEC68 /* AppDelegate.swift in Sources */,
 				17B25A4B2580F0E80029BEA8 /* HomeVC.swift in Sources */,
+				173C1023258B6CEB009411FF /* WaterfallCell.swift in Sources */,
 				17525BF6257F9EDF006CEC68 /* SceneDelegate.swift in Sources */,
 				17B25A592580F4C10029BEA8 /* Constant.swift in Sources */,
 				17525BFE257F9EDF006CEC68 /* LittleYellow.xcdatamodeld in Sources */,
 				17B25A542580F32E0029BEA8 /* DiscoveryVC.swift in Sources */,
 				17B25A4E2580F3060029BEA8 /* FolloewVC.swift in Sources */,
-				1734039B258B59A40030C1FC /* WaterfallVCCollectionViewController.swift in Sources */,
+				1734039B258B59A40030C1FC /* WaterfallVC.swift in Sources */,
 				17B25A512580F3180029BEA8 /* NearbyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
