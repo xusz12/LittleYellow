@@ -8,4 +8,5 @@ target 'LittleYellow' do
   # Pods for LittleYellow
   pod 'XLPagerTabStrip', '~> 9.0'
   pod 'CHTCollectionViewWaterfallLayout'
+  pod 'YPImagePicker'
 end

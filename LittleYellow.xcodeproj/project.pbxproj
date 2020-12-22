@@ -20,6 +20,8 @@
 		17B25A512580F3180029BEA8 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A502580F3180029BEA8 /* NearbyVC.swift */; };
 		17B25A542580F32E0029BEA8 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A532580F32E0029BEA8 /* DiscoveryVC.swift */; };
 		17B25A592580F4C10029BEA8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B25A582580F4C10029BEA8 /* Constant.swift */; };
+		17D09D782591F0FA00A4018E /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D09D772591F0FA00A4018E /* PostVC.swift */; };
+		17D09D7B2591F14700A4018E /* TabbarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D09D7A2591F14700A4018E /* TabbarC.swift */; };
 		2B0DF7962587928CFEAF8E8C /* Pods_LittleYellow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A223CB9F93B3BF54D348A60 /* Pods_LittleYellow.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		17B25A502580F3180029BEA8 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
 		17B25A532580F32E0029BEA8 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		17B25A582580F4C10029BEA8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		17D09D772591F0FA00A4018E /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		17D09D7A2591F14700A4018E /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
 		4A223CB9F93B3BF54D348A60 /* Pods_LittleYellow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleYellow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A048F0E9F26A57DFDF09F6D /* Pods-LittleYellow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleYellow.release.xcconfig"; path = "Target Support Files/Pods-LittleYellow/Pods-LittleYellow.release.xcconfig"; sourceTree = "<group>"; };
 		E7220E993DC04DFF5BD40663 /* Pods-LittleYellow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleYellow.debug.xcconfig"; path = "Target Support Files/Pods-LittleYellow/Pods-LittleYellow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			children = (
 				17525BF3257F9EDF006CEC68 /* AppDelegate.swift */,
 				17525BF5257F9EDF006CEC68 /* SceneDelegate.swift */,
+				17D09D772591F0FA00A4018E /* PostVC.swift */,
+				17D09D7A2591F14700A4018E /* TabbarC.swift */,
 				17B25A562580F3420029BEA8 /* home */,
 			);
 			path = control;
@@ -268,6 +274,8 @@
 				17B25A4E2580F3060029BEA8 /* FolloewVC.swift in Sources */,
 				1734039B258B59A40030C1FC /* WaterfallVC.swift in Sources */,
 				17B25A512580F3180029BEA8 /* NearbyVC.swift in Sources */,
+				17D09D782591F0FA00A4018E /* PostVC.swift in Sources */,
+				17D09D7B2591F14700A4018E /* TabbarC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
